@@ -1,0 +1,3 @@
+In development mode, this plugin will add html comments at the start and end of partial rendering, so you can see which partial is creating the HTML code you're interested in.
+
+http://gwynmorfey.com/categories/1-on-the-job/articles/155-tracing-through-rails-partials
