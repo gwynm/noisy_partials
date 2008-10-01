@@ -3,7 +3,7 @@ module ActionView
     def render_partial_with_explanation(*args) 
       start_explanation = "\n<!-- START PARTIAL #{args[0]} -->\n"
       end_explanation = "\n<!-- END PARTIAL #{args[0]} -->\n"
-      start_explanation + render_partial_without_explanation(*args) + end_explanation
+      start_explanation + render_partial_without_explanation(*args).to_s + end_explanation
     end
 
     alias_method_chain :render_partial,:explanation     
